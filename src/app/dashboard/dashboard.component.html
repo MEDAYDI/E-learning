@@ -1,0 +1,134 @@
+
+<div style="overflow-x: hidden;">
+  <nav class="mb-0" style="background-color:rgba(0, 0, 0, 0.308); color:white; overflow: hidden;">
+    <h2 style="color:white;">Udemy</h2>
+  </nav>
+  <div>
+    <div class="row">
+      <div style="max-height: 80vh; "  class="col-lg-9 g-0  video-content" >
+        <div  style="height: 100%;" class="tab-content video-list" id="nav-tabContent" >
+          <div style="height: 100%; background-color: black;"   class="tab-pane fade show active vid" id="course1" role="tabpanel" aria-labelledby="list-home-list">
+            <video style="height: 100%;" (click)="pausePlay()"  width="100%" controls>
+              <source src="assets/video/video1.mp4" type="video/mp4">
+            </video>
+            <img *ngIf="playicon" class="play-btn" style="height: 100px;position: absolute;top:33% ;left:45%;"  src="assets/images/play-icon.png" alt="" srcset="">
+            <img *ngIf="pauseicon" class="play-btn" style="height: 100px;position: absolute;top:33% ;left:45%;"  src="assets/images/pause.png" alt="" srcset="">
+            <span *ngIf="closeBarbtn" (click)="openBar()" class="closeBar d-flex" ><i style="color: #fff; font-size:20px" class="fa fa-arrow-left m-2" aria-hidden="true"></i><p class="mt-1" style="color:#fff; font-size: 15px;">Course Content</p></span>
+          </div>
+          <div style="height: 100%;background-color: black;" class="tab-pane fade show vid" id="course2" role="tabpanel" aria-labelledby="list-home-list">
+            <video height=100% width="100%" height="100%" controls>
+              <source src="assets/video/video2.mp4" type="video/mp4">
+            </video>
+            <img class="play-btn" src="img/play-icon.png" alt="" srcset="">
+          </div>
+          <div style="height: 100%;background-color: black;" class="tab-pane fade show vid" id="course3" role="tabpanel" aria-labelledby="list-home-list">
+            <video height=100% width="100%" height="100%" controls>
+              <source src="assets/video/video3.mp4" type="video/mp4">
+            </video>
+            <img class="play-btn" src="img/play-icon.png" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 g-0 course-content " >
+          <div class="d-flex mb-0">
+            <h4 class="mt-3 ms-4">Course Content </h4>
+            <button (click)="closeBar()"  type="button" class="btn-close " ></button>
+          </div>
+          <hr class="mb-1">
+          <div class="list-group" id="list-tab" role="tablist">
+           <div class="list-group-item list-group-item-action active crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course1" role="tab"> <input type="checkBox" class="me-4"> <p>1.course1 <br> 2 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course2" role="tab"><input type="checkBox" class="me-4"> <p>2.course2 <br> 3 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+            <div  class="list-group-item list-group-item-action crorsList" (click)="pauseAllvideo()" data-bs-toggle="list" href="#course3" role="tab"><input type="checkBox" class="me-4"> <p>3.course3 <br> 5 min</p></div>
+          </div>
+
+      </div>
+    </div>
+    <div class="notes" >
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#home">Annonce</a></li>
+        <li class="nav-item"><a class="nav-link " data-bs-toggle="tab" href="#profile">Notes</a></li>
+        <li class="nav-item"><a class="nav-link " data-bs-toggle="tab" href="#contact">Reviews</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="home">
+          <div class="row border g-0 rounded shadow-sm">
+            <div class="col p-4">
+              <div *ngIf="addAnnoceEta" class="addcomntAnnoce">
+                <textarea class="p-3"   rows="6"></textarea>
+                <div class="controlAnnonce" >
+                  <button class="me-2 mb-2" (click)=" annulAnnoce()" >annuler</button>
+                  <button >enregistrer</button>
+                </div>
+              </div>
+              <button *ngIf="!addAnnoceEta" class="addAnnoce" (click)="addAnnoce()">Ajouter Annonce</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane " id="profile">
+          <div class="row border g-0 rounded shadow-sm">
+            <div class="col p-4">
+              <div *ngIf="addAnnoceEta" class="addcomntAnnoce">
+                <textarea class="p-3"   rows="6"></textarea>
+                <div class="controlAnnonce" >
+                  <button class="me-2 mb-2" (click)=" annulAnnoce()" >annuler</button>
+                  <button >enregistrer</button>
+                </div>
+              </div>
+              <button *ngIf="!addAnnoceEta" class="addAnnoce" (click)="addAnnoce()">Ajouter Note</button>
+              
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane " id="contact">
+          <div class="row border g-0 rounded shadow-sm">
+            <div class="col p-4">
+              <div class="reviewsContent">
+                <div class="star-widget d-flex mb-3" >
+                  <label for="rate-1"  (click)="numStar(1)"  class="fa fa-star star me-2"  ></label>
+                  <label for="rate-2" (click)="numStar(2)"   class="fa fa-star star me-2"  ></label>
+                  <label for="rate-3" (click)="numStar(3)"  class="fa fa-star star me-2"  ></label>
+                  <label for="rate-4" (click)="numStar(4)"  class="fa fa-star star me-2"  ></label>
+                  <label for="rate-5" (click)="numStar(5)"  class="fa fa-star star me-2"  ></label>
+                  <div style="position: absolute;left: 108%;top: 2%; color: #fff; font-size: 30px;" >{{numbStar}}/5</div>   
+                </div>
+                <form (ngsubmit)="addcomnt()"> 
+                  <div class="textarea">
+                        <textarea   cols="50" ></textarea>
+                  </div>
+                  <div class="btn">
+                    <button class="me-2" >Annuler</button>
+                    <button type="submit">Ajouter</button>
+                  </div>
+                </form>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
