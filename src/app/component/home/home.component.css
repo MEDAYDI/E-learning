@@ -1,0 +1,146 @@
+.imgCourse{
+    margin-top: 15px;
+     margin-left:70px
+}
+
+
+
+.courseHoverRigth{
+    position: absolute;
+    left: 100%;
+    top: -15px;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    z-index: -10;
+    opacity: 0;
+    border: solid 1px black;
+}
+
+.courseHoverRigth button{
+    height: 40px;
+    width: 100%;
+    background-color: #a435f0;
+    color: white;
+    border: none;
+}
+
+.courseHoverLeft{
+    position: absolute;
+    right: 100%;
+    top: -15px;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    z-index: -10;
+    opacity: 0;
+    border: solid 1px black;
+    
+}
+
+.courseHoverLeft button{
+    height: 40px;
+    width: 100%;
+    background-color: #a435f0;
+    color: white;
+    border: none;
+}
+
+
+.course_col:hover  .courseHoverRigth  {
+    opacity: 1;
+    z-index: 10;
+    
+}
+
+.course_col:hover  .courseHoverLeft {
+    opacity: 1;
+    z-index: 10;
+}
+
+.motifLeft{
+    position: absolute;
+    left: 100%;
+    top: 40%;
+    transform: rotateZ(45deg);
+    height: 50px;
+    width:50px;
+    background-color: white;
+    z-index: -100;
+    opacity: 0;
+    border: solid black 1px;
+}
+
+.motifRight{
+    position: absolute;
+    right: 100%;
+    top: 40%;
+    transform: rotateZ(45deg);
+    height: 50px;
+    width:50px;
+    background-color:white;
+    border: 1px solid black;
+    z-index: -100;
+    opacity: 0;
+}
+
+.course_col:hover .motifLeft{
+    opacity: 1;
+}
+
+.course_col:hover .motifRight{
+    opacity: 1;
+}
+
+
+@media(max-width:991px){
+    .motifLeft{
+        position: absolute;
+        left: 42%;
+        bottom: 0;
+        transform: rotateZ(45deg);
+        height: 50px;
+        width:50px;
+        background-color: white;
+        z-index: -100;
+        
+    }
+    
+    .motifRight{
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        transform: rotateZ(45deg);
+        height: 50px;
+        width:50px;
+        background-color:white;
+        z-index: -100;
+        
+    }
+
+    .courseHoverRigth{
+        position: absolute;
+        top: 102%;
+        left: 20%;
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        z-index: -10;
+        opacity: 0;
+        border: solid 1px black;
+    }
+
+    .courseHoverLeft{
+        position: absolute;
+        top: 102%;
+        left: 20%;
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        z-index: -10;
+        opacity: 0;
+        border: solid 1px black;
+        
+    }
+
+}

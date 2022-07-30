@@ -1,0 +1,70 @@
+.nbrcourseCercle{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+     display: flex;
+     font-size: 15px;
+     color: black;
+     justify-content: center;
+     justify-items: center;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: yellow;
+}
+
+.profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     background-color: black;
+
+}
+.profileSection{
+    position: absolute;
+      top: 35px;
+      right: -10px;
+      height: 500px;
+      width: 260px;
+      background-color: white;
+      z-index: -100;
+       opacity: 0;
+       border: solid 1px black;
+       border-radius: 2px;
+          
+}
+
+.profileSection button{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    left: 65px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.profile:hover .profileSection{
+    opacity: 1;
+    z-index: 1000;
+}
+
+
+/*Profile Section */ 
+
+.SectionProfile{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}

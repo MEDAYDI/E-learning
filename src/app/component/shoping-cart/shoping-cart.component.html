@@ -1,0 +1,77 @@
+<div class="container mt-5 mb-5">
+    <h1>Shopping Cart</h1>
+    <div *ngIf="false">
+        <h3 class="mb-2"> 0 course in Cart</h3>
+        <div  style="height:328px; width:100% ;display: flex; flex-direction: column; align-items: center;  " class="course">
+            <img src="https://s.udemycdn.com/browse_components/flyout/empty-shopping-cart-v2.jpg" alt="">
+            <p>Your cart is empty. Keep shopping to find a course!</p>
+        </div>
+    </div>
+    <div *ngIf="true" class="row">
+        <div class="col-lg-8 courseCardList">
+            <h3>2 course in Cart</h3>
+            <div>
+                <div class="courseCard p-2">
+                    <div class="cardImage">
+                        <img class="imgCourse" src="assets/images/course_4.png" width="80px" height="60px" alt="">
+                    </div>
+                    <div style="width: 400px;" class="CardContent">
+                        <span style="font-size: 20px; color:black;">PowerPoint</span>
+                        <span>By mohamed</span>
+
+                        <span style="color:#e59819 ;">5.0 <i class="fa fa-star" aria-hidden="true"></i> <i
+                                class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                class="fa fa-star" aria-hidden="true"></i></span>
+                        <span style="color: #6a6f73;font-size: 1rem;">9 heures</span>
+                    </div>
+                    <div style="width:90px" class="CardAction">
+                        <span class="mb-2"><a href="#">Supprimer</a></span>
+                        <span><a href="#">Save to later</a></span>
+                    </div>
+                    <div class="cardPrice">
+                        <p style="color: #a435f0;">$220</p>
+                        <span> <s>$320</s> </span>
+                    </div>
+                </div>
+                <div class="courseCard p-2">
+                    <div class="cardImage">
+                        <img class="imgCourse" src="assets/images/course_5.jpg" width="80px" height="60px" alt="">
+                    </div>
+                    <div style="" class="CardContent">
+                        <span style="font-size: 20px; color:black;">Exel</span>
+                        <span>By salah</span>
+                        <span> <span class="me-1" style="color: #e59819;"> 0.0</span><i class="fa fa-star"
+                                aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i
+                                class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                aria-hidden="true"></i><i style="background-color: white;" class="fa fa-star"
+                                aria-hidden="true"></i></span>
+                        <span style="color: #6a6f73;font-size: 1rem;">9 heures</span>
+                    </div>
+                    <div style="width:90px" class="CardAction">
+                        <span class="mb-2"><a href="#">Supprimer</a></span>
+                        <span><a href="#">Save to later</a></span>
+                    </div>
+                    <div class="cardPrice">
+                        <p style="color: #a435f0;">$220</p>
+                        <span> <s>$320</s> </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3">
+            <div style="flex-direction: colum;justify-content: flex-start;">
+                <h2>Total : </h2>
+                <div class="course_price " style="font-size: 36px;">$220</div>
+                <span><s>$320</s></span>
+                <p>85% off</p>
+            </div>
+            <button>Checkout</button>
+            <hr>
+            <p class="promotion">Promotions</p>
+            <input type="text"><label for="">Apply</label>
+        </div>
+    </div>
+
+</div>

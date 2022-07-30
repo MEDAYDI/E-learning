@@ -1,18 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "ab703b8a-dafc-4df5-8fb7-5c1e5f926299"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "education": {
+    "E-learning": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -20,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/education",
+            "outputPath": "dist/e-learning",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "education:build:production"
+              "browserTarget": "E-learning:build:production"
             },
             "development": {
-              "browserTarget": "education:build:development"
+              "browserTarget": "E-learning:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "education:build"
+            "browserTarget": "E-learning:build"
           }
         },
         "test": {
@@ -105,5 +98,7 @@
       }
     }
   },
-  "defaultProject": "education"
+  "cli": {
+    "analytics": "5bcda122-7d4f-48b4-81e8-55d360e65806"
+  }
 }
